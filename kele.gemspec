@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
    s.name          = 'kele'
    s.version       = '0.0.1'
-   s.date          = '2018-1-29'
+   s.date          = '2018-01-29'
    s.summary       = 'Kele API Client'
    s.description   = 'A client for the Bloc API'
    s.authors       = ['Tucker Platt']

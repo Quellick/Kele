@@ -1,8 +1,8 @@
 require 'httparty'
 
-class kele
-  include httparty
-  base_url 'https://www.bloc.io/api/v1'
+class Kele
+  include HTTParty
+  base_uri 'https://www.bloc.io/api/v1'
 
   def initialize(email,password)
     response = self.class.post('/sessions', body: {
