@@ -41,7 +41,7 @@ class Kele
     response = self.class.post("/messages",            # sender, recipient_id, and stripped text are required
       body: {
         "sender": sender,                               # my email
-        "recipient_id": recipient_id,                   # Rizwan id 2292457
+        "recipient_id": recipient_id,                   # id 2345139
         "token": token,                                 # message thread token or nil for new thread
         "subject": subject,                             # string
         "stripped_text": stripped_text                  # string
