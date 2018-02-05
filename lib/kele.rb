@@ -51,7 +51,7 @@ class Kele
     puts response.body
   end
   
-  def create_submission(checkpoint_id, assignment_branch, assignment_commit_link, comment, enrollment_id)
+  def create_submission(assignment_branch, assignment_commit_link, checkpoint_id, comment, enrollment_id)
     response = self.class.post("https://www.bloc.io/api/v1/checkpoint_submissions", headers: { "authorization": @auth_token },
       body: {
         "assignment_branch": assignment_branch,
@@ -59,8 +59,8 @@ class Kele
         "checkpoint_id": checkpoint_id,
         "comment": comment,
         "enrollment_id": enrollment_id
-      },
-      headers: { "authorization" => @auth_token, content_type: "application/json" })
+      })
+    p response
   end
   
   
